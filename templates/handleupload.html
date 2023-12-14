@@ -1,0 +1,28 @@
+<!-- templates/handleupload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件上传处理</title>
+</head>
+<body>
+<h1>文件上传处理结果</h1>
+
+{{ if .Error }}
+<p style="color: red;">{{ .Error }}</p>
+{{ else }}
+<p>所有文件列表：</p>
+<ul>
+    {{ range .FileDetails }}
+    <li>
+        <strong>文件名：</strong>{{ .FileName }}, <strong>IPFS哈希：</strong>{{ .IPFSHash }}
+        <a href="/download?hash={{ .IPFSHash }}&&FileName={{ .FileName }}">下载文件</a>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+<a href="/upload">返回上传页面</a>
+</body>
+</html>

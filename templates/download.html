@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPFS文件下载</title>
+</head>
+<body>
+<h1>IPFS文件下载</h1>
+
+<p>输入IPFS哈希：</p>
+<input type="text" id="ipfsHashInput">
+<button onclick="downloadFile()">下载文件</button>
+
+<script>
+    function downloadFile() {
+        // 从输入字段获取IPFS哈希
+        var ipfsHash = document.getElementById("ipfsHashInput").value;
+
+        if (!ipfsHash) {
+            alert("IPFS哈希不能为空");
+            return;
+        }
+
+        // 用输入的IPFS哈希构建下载端点的URL，并将浏览器重定向到该URL
+        window.location.href = "/ipfs/download?hash=" + ipfsHash;
+    }
+</script>
+</body>
+</html>
