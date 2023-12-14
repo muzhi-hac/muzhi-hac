@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
-	"ipfs-storage/dao"
+	"ipfs_stor/dao"
 	"log"
 	"net/http"
 	"path/filepath"
