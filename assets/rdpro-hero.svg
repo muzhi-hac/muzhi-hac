@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">GraphRAG-based AutoML Benchmark Agent</title>
+  <desc id="desc">A featured project banner showing a workflow from natural-language tasks and datasets through GraphRAG to runnable machine-learning experiments.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="0.5" stop-color="#102a56"/>
+      <stop offset="1" stop-color="#23154d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#bc8cff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#79c0ff"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="440" rx="26" fill="url(#bg)"/>
+  <circle cx="1080" cy="40" r="150" fill="#8957e5" opacity="0.16" filter="url(#glow)"/>
+  <circle cx="90" cy="400" r="125" fill="#1f6feb" opacity="0.18" filter="url(#glow)"/>
+
+  <g fill="none" stroke="#ffffff" opacity="0.06">
+    <path d="M0 76H1200M0 152H1200M0 228H1200M0 304H1200M0 380H1200"/>
+    <path d="M120 0V440M240 0V440M360 0V440M480 0V440M600 0V440M720 0V440M840 0V440M960 0V440M1080 0V440"/>
+  </g>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+    <text x="600" y="60" text-anchor="middle" fill="#79c0ff" font-size="16" font-weight="700" letter-spacing="3">FEATURED PROJECT</text>
+    <text x="600" y="110" text-anchor="middle" fill="#ffffff" font-size="38" font-weight="800">GraphRAG-based AutoML</text>
+    <text x="600" y="148" text-anchor="middle" fill="#c9d1d9" font-size="22">From an image-task request to reproducible experiment code</text>
+
+    <g font-size="16" font-weight="650" text-anchor="middle">
+      <rect x="50" y="218" width="230" height="92" rx="16" fill="#0d213d" stroke="#388bfd" stroke-width="2"/>
+      <text x="165" y="254" fill="#ffffff">Task + Dataset</text>
+      <text x="165" y="280" fill="#8b949e" font-size="14" font-weight="400">natural-language input</text>
+
+      <path d="M290 264H355" stroke="#79c0ff" stroke-width="3" marker-end="url(#arrow)"/>
+
+      <rect x="370" y="218" width="220" height="92" rx="16" fill="#102747" stroke="#58a6ff" stroke-width="2"/>
+      <text x="480" y="254" fill="#ffffff">GraphRAG</text>
+      <text x="480" y="280" fill="#8b949e" font-size="14" font-weight="400">retrieve + constrain</text>
+
+      <path d="M600 264H665" stroke="#79c0ff" stroke-width="3" marker-end="url(#arrow)"/>
+
+      <rect x="680" y="218" width="220" height="92" rx="16" fill="#18234c" stroke="#a371f7" stroke-width="2"/>
+      <text x="790" y="254" fill="#ffffff">Model Configs</text>
+      <text x="790" y="280" fill="#8b949e" font-size="14" font-weight="400">ranked + inspectable</text>
+
+      <path d="M910 264H975" stroke="#79c0ff" stroke-width="3" marker-end="url(#arrow)"/>
+
+      <rect x="990" y="218" width="160" height="92" rx="16" fill="#231c4d" stroke="#bc8cff" stroke-width="2"/>
+      <text x="1070" y="254" fill="#ffffff">Run Code</text>
+      <text x="1070" y="280" fill="#8b949e" font-size="14" font-weight="400">train · eval · infer</text>
+    </g>
+
+    <rect x="373" y="354" width="454" height="50" rx="25" fill="url(#accent)"/>
+    <text x="600" y="386" text-anchor="middle" fill="#06101f" font-size="17" font-weight="800">CLICK TO EXPLORE THE REPOSITORY  →</text>
+  </g>
+</svg>
